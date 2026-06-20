@@ -65,5 +65,9 @@ A compact, battery-powered, high-resolution **electromyography (EMG)** acquisiti
 
 The ADS1299 features a **24-bit analog-to-digital converter (ADC)**:
 
+## CIRCUIT DIAGRAM
+<img width="5037" height="3237" alt="image" src="https://github.com/user-attachments/assets/8a1592b6-d766-4f1d-a04e-07c9d3bd605f" />
+
+
 ```math
 2^{24} = 16,777,216
