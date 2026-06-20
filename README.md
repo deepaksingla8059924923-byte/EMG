@@ -8,7 +8,6 @@ A compact, battery-powered, high-resolution **electromyography (EMG)** acquisiti
 
 - Battery-powered operation (**3–6 V DC only**)
 - High-resolution **24-bit EMG acquisition**
-- Wireless communication via **Bluetooth Low Energy (BLE)**
 - Onboard **microSD card logging**
 - Integrated **3-axis accelerometer** for motion tracking
 - Low-noise analog power rails (**+2.5 V / −2.5 V**)
