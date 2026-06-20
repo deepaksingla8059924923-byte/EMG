@@ -21,8 +21,8 @@ A compact, battery-powered, high-resolution **electromyography (EMG)** acquisiti
 | Parameter | Specification |
 |------------|----------------|
 | **Microcontroller** | PIC32MX250F128B with chipKIT UDB32-MX2-DIP bootloader |
-| **Analog Front End** | ADS1299 (24-bit ADC) |
-| **Accelerometer** | LIS3DH (3-axis) |
+| **Analog Front End** | ADS1299IPAG (24-bit ADC) |
+| **Accelerometer** | LIS3DHTR (3-axis) |
 | **Wireless Connectivity** | RFduino BLE |
 | **Storage** | microSD card slot |
 | **Input Power** | 3–6 V DC battery only |
@@ -36,14 +36,28 @@ A compact, battery-powered, high-resolution **electromyography (EMG)** acquisiti
 
 ## Bill of Materials (BOM)
 
-- PIC32MX250F128B Microcontroller
-- ADS1299 Analog Front End
-- LIS3DH 3-Axis Accelerometer
-- RFduino BLE Module
-- microSD Card Socket
-- +3.3 V Voltage Regulator
-- +2.5 V Analog Regulator
-- −2.5 V Analog Regulator
+| Component | Manufacturer Part Number | Unit Price (INR) | Notes |
+|------------|--------------------------|-----------------:|-------|
+| Microcontroller | PIC32MX250F128B-I/SP | ₹481.74 | 28-SPDIP package |
+| Analog Front End | ADS1299IPAG | ₹9,484.08 | 8-channel, 24-bit AFE |
+| Accelerometer | LIS3DHTR | ₹183.35 | 3-axis MEMS accelerometer |
+| BLE Module | RFduino RFD22102 | N/A | Retired / no longer available |
+| microSD Card Socket | 112J-TDAR-R01 | ₹116.25 | microSD connector only |
+| +3.3 V Regulator | TPS7A2033PDBVR | ₹33.08 | Low-noise LDO |
+| +2.5 V Regulator | TPS7A2025PDBVR | ₹32.61 | Low-noise LDO |
+| −2.5 V Inverter | TPS60403DBVR | ₹109.02 | Charge-pump inverter |
+| Passive Components | Resistors, capacitors, ESD parts | ₹200–₹500 | Estimated |
+| PCB Fabrication | 2.41" × 2.41" custom PCB | ₹500–₹1,500 | Estimated, depends on quantity |
+
+### Estimated Cost
+
+| Category | Cost (INR) |
+|-----------|-----------:|
+| Core ICs + connectors + regulators | ₹10,440.13 |
+| Passives + PCB fabrication | ₹700–₹2,000 |
+| **Estimated prototype total** | **₹11,140–₹12,440** |
+
+> RFduino is discontinued. If you are starting a new revision, replace it with a current BLE module instead of building around obsolete parts.
 
 ---
 
@@ -53,45 +67,3 @@ The ADS1299 features a **24-bit analog-to-digital converter (ADC)**:
 
 ```math
 2^{24} = 16,777,216
-```
-
-Theoretical voltage resolution:
-
-```math
-\text{Resolution} = \frac{\text{Voltage Range}}{2^{24}}
-```
-
-Assuming a 5 V full-scale range:
-
-```math
-\frac{5\ \text{V}}{16,777,216} \approx 0.298\ \mu\text{V/bit}
-```
-
-> **Note:** Actual effective resolution depends on the ADS1299 reference voltage, PGA gain settings, and system noise.
-
----
-
-## Applications
-
-- Surface EMG (sEMG)
-- Human–Machine Interfaces (HMI)
-- Prosthetic Control
-- Gesture Recognition
-- Rehabilitation Monitoring
-- Biomechanical Analysis
-- Research and Education
-
----
-
-## Power Requirements
-
-> **Important:** Use battery power only during signal acquisition to minimize electrical noise.
-
-- Input voltage: **3–6 V DC**
-- Recommended source: **Li-ion/LiPo battery**
-- USB power is not recommended during EMG recording
-
----
-## Circuit Diagrams
-<img width="5037" height="3237" alt="image" src="https://github.com/user-attachments/assets/9b97cc76-4725-445d-80c1-f0e710603343" />
-
