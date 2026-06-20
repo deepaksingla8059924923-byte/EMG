@@ -92,3 +92,6 @@ Assuming a 5 V full-scale range:
 - USB power is not recommended during EMG recording
 
 ---
+## Circuit Diagrams
+<img width="5037" height="3237" alt="image" src="https://github.com/user-attachments/assets/9b97cc76-4725-445d-80c1-f0e710603343" />
+
