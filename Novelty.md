@@ -13,7 +13,7 @@ Electrodes
 ```
 ```
 
-### Data Flow
+## Data Flow
 
 1. Electrodes acquire EEG and EMG signals.
 2. ADS1299 digitizes the signals at 24-bit resolution.
@@ -22,4 +22,4 @@ Electrodes
    - Sent to a computer over USB for machine learning.
    - Logged to a microSD card for backup.
 
-> **Note:** USB is the primary interface for data collection and ML training.
+USB is the primary interface for data collection and ML training.
