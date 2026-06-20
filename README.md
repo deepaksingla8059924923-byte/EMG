@@ -20,10 +20,9 @@ A compact, battery-powered, high-resolution **electromyography (EMG)** acquisiti
 
 | Parameter | Specification |
 |------------|----------------|
-| **Microcontroller** | PIC32MX250F128B with chipKIT UDB32-MX2-DIP bootloader |
+| **Microcontroller** | ESP32-S3-WROOM-1-N8R8 |
 | **Analog Front End** | ADS1299IPAG (24-bit ADC) |
 | **Accelerometer** | LIS3DHTR (3-axis) |
-| **Wireless Connectivity** | RFduino BLE |
 | **Storage** | microSD card slot |
 | **Input Power** | 3–6 V DC battery only |
 | **Input Voltage Range** | ±2.5 V |
@@ -38,10 +37,9 @@ A compact, battery-powered, high-resolution **electromyography (EMG)** acquisiti
 
 | Component | Manufacturer Part Number | Unit Price (INR) | Notes |
 |------------|--------------------------|-----------------:|-------|
-| Microcontroller | PIC32MX250F128B-I/SP | ₹481.74 | 28-SPDIP package |
+| Microcontroller | ESP32-S3-WROOM-1-N8R8 | ₹350–₹600 | Dual-core MCU with integrated Wi-Fi and BLE 5|
 | Analog Front End | ADS1299IPAG | ₹9,484.08 | 8-channel, 24-bit AFE |
 | Accelerometer | LIS3DHTR | ₹183.35 | 3-axis MEMS accelerometer |
-| BLE Module | RFduino RFD22102 | N/A | Retired / no longer available |
 | microSD Card Socket | 112J-TDAR-R01 | ₹116.25 | microSD connector only |
 | +3.3 V Regulator | TPS7A2033PDBVR | ₹33.08 | Low-noise LDO |
 | +2.5 V Regulator | TPS7A2025PDBVR | ₹32.61 | Low-noise LDO |
